@@ -100,6 +100,8 @@ public class TestTemplateProcessor implements DataSourceType{
 		EasyMock.expect(dsc.getConstDataSource()).andStubReturn(ds);
 		EasyMock.expect(dsc.getDataSource(null)).andStubReturn(ds);
 
+
+
 		EasyMock.replay( ds, dh1, dh2, dh3);
 		PowerMock.mockStatic(DataSourceConfig.class);
 		EasyMock.expect(DataSourceConfig.newInstance()).andStubReturn(dsc);
