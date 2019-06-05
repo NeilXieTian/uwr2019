@@ -67,7 +67,7 @@ public class TestTemplateProcessor implements DataSourceType{
         //
         //
         // 这里写代码
-                DataSourceConfig dsc = EasyMock.createMock(DataSourceConfig.class);
+		DataSourceConfig dsc = EasyMock.createMock(DataSourceConfig.class);
 		EasyMock.expect(dsc.getConstDataSource()).andReturn();
 		DataHolder dh1 = EasyMock.createMock(DataHolder.class);
 		DataHolder dh2 = EasyMock.createMock(DataHolder.class);
@@ -94,7 +94,6 @@ public class TestTemplateProcessor implements DataSourceType{
 
 		ArrayList<DataSource> dss = new ArrayList<DataSource>();
 		dss.add(ds);
-
 
 		EasyMock.expect(dsc.getDataSources()).andStubReturn(dss);
 		EasyMock.expect(dsc.getFilename()).andStubReturn("test");
