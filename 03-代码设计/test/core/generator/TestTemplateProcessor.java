@@ -78,7 +78,6 @@ public class TestTemplateProcessor implements DataSourceType{
 		EasyMock.expect(dh3.getExpr()).andStubReturn("${num}+${readme}");
 		EasyMock.expect(dh3.fillValue()).andStubReturn(null);
 
-
 		ArrayList<DataHolder> vars = new ArrayList<DataHolder>();
 		vars.add(dh1);
 		vars.add(dh2);
